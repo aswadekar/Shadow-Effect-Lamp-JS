@@ -1,0 +1,91 @@
+*{
+    margin: 0;;
+    padding: 0;
+    font-style: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d2026;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav .menu{
+    width: 25px;
+    margin-right: 20px;
+    margin-left: -200px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    background: #999;
+    display: block;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.active{
+    background: teal;
+}
+.active span{
+    background: #fff;
+    margin-left: 29.5px;
+}
+.on{
+    opacity: 1;
+}
